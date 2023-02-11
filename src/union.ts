@@ -16,3 +16,9 @@ type Admin = {
 
 let santosh: User3 | Admin = { name: "santosh", id: 34 };
 santosh = { username: "san", id: 34 };
+
+//----------------Example 3-----------------
+let seatAllotment: "aisle" | "middle" | "window";
+
+seatAllotment = "aisle"; //allowed
+//seatAllotment = "crew"; //not allowed
