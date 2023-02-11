@@ -19,3 +19,6 @@ const Persons: Person[] = [];
 
 //----------------Example 4-----------------
 const matrix: number[][] = [];
+
+//----------------Example 5-----------------
+const data: (string | number)[] = [1, "2", 3];
