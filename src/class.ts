@@ -39,3 +39,26 @@ class User7 {
     private userId: number
   ) {}
 }
+
+//----------------Example 3-----------------
+//Getter,Setter
+class User8 {
+  private age: number = 18; //'age' not accessible outside this class,we can use getter and setter method to access 'age' outside of this class.
+  constructor(public name: string, public email: string) {}
+
+  set setAge(age: number) {
+    if (age >= 18) {
+      this.age = age;
+    } else {
+      throw new Error("Under age!");
+    }
+  }
+
+  get getAge(): number {
+    return this.age;
+  }
+}
+
+let nuser = new User8("santosh", "saf");
+nuser.setAge = 22;
+console.log(nuser.getAge);
