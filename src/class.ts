@@ -62,3 +62,16 @@ class User8 {
 let nuser = new User8("santosh", "saf");
 nuser.setAge = 22;
 console.log(nuser.getAge);
+
+//----------------Example 4-----------------
+//Protected
+class User9 {
+  protected id: number = 0; // only accesible to class which extend this class
+  constructor(public username: string, public email: string) {}
+}
+
+class Admin3 extends User9 {
+  changeId() {
+    this.id = 34;
+  }
+}
