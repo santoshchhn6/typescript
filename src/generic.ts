@@ -32,3 +32,10 @@ type User10 = {
 const identity4 = <User10>(val: User10): User10 => {
   return val;
 };
+
+//----------------Example 4-----------------
+//generic constrain
+
+const getProperty = <T, K extends keyof T>(obj: T, key: K) => {
+  return obj[key];
+};
