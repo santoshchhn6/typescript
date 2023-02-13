@@ -1,3 +1,5 @@
+//we can't create object from abstract class
+
 abstract class TakePhoto {
   constructor(public cameraMode: string, public filter: string) {}
 
